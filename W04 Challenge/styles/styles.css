@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    align-items: center;
+    background-color: pink;
+}
+img{
+    width: 30%;
+}
+h1:hover{
+    color: black;
+}
+ol{
+    color: black;
+}
+main, h1{
+    color: white;
+}
+
+footer {
+    font-size: 1em;
+
+  }
+
+h2 { 
+    font-size: 1.5em;
+    margin: 3.5em;
+  }
+
+
