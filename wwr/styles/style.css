@@ -143,3 +143,6 @@ a {
 main section img {
     box-sizing: border-box;
 }
+footer, .social, img {
+    padding-top: 15px;
+}
