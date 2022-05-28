@@ -1,0 +1,58 @@
+img {
+    width: 100%;
+}
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #fff 50%, rgb(166, 165, 165) 50%);
+}
+
+h1 {
+    z-index: 1;
+    position: absolute ;
+    top: 5%;
+    left: 28%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 15px;
+}
+
+h3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 20px;
+    padding-top: 100%;
+    text-align: center;
+    color: #c000008c;
+}
+
+.public {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    padding: 10px;
+  }
+
+.public h3 {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+ 
+}
+.images, .write2 {
+    background-image: image(img);
+    padding: 15px;
+    font-size: 30px;
+   
+}
+
+.write1 {
+    width: (img);
+    font-size: 180px;
+    left: 5%;
+  
+ 
+}
+.write2 {  
+    font-size: 100px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
