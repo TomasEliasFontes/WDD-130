@@ -6,6 +6,8 @@
     --paragraph-font: Open Sans, sans-serif;
 
 }
+
+/* Body */
 body{
     display: block;
     background-color:#fcfbfb;
@@ -14,12 +16,14 @@ body{
     margin: 0;
     padding: 0;
 }
-    
+ 
+/*div contect*/
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
+/* Header */
 header {
     display: grid;
     grid-template-columns: 150px auto;
@@ -40,6 +44,7 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
 nav a {
     padding: 35px;
     text-align: center;
@@ -51,6 +56,9 @@ nav a:hover {
     background-color: #d9c2a3;
     color: black;
 } 
+
+/*div hero*/
+
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
     color: white;
@@ -90,6 +98,7 @@ h4 {
     background-color:white
 }
 
+/* Main */
 main section {
     text-align: center;
 }
@@ -185,6 +194,8 @@ main section img {
     color: #d9c2a3;
     line-height: 1.5em
 }
+
+/* Footer */
 footer {
     margin-top: 200px;
     padding: 25px 50px;
@@ -214,7 +225,7 @@ a {
     font-family: var(--paragraph-font);
 }
 
-
+/* Adjust Element */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
