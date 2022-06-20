@@ -62,9 +62,9 @@ h1 {
 }
 
 h4 {
-    font-family: var(--paragraph-font);
     color: white;
     margin-top: 205px;
+    font-family: var(--paragraph-font);
 }
 
 /* Main */
@@ -173,11 +173,11 @@ form {
 footer {
     margin-top: 100px;
     padding: 25px 50px;
-    font-family: var(--paragraph-font);
     background-color:#F9F0EA;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: var(--paragraph-font);
 }
 footer h3 {
     align-items: center;
