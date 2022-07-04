@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 #home-box {
-    z-index: -1;
+    z-index: -2
 }
 
 #home-msg {
@@ -97,13 +97,12 @@ nav a:hover {
     grid-row: 1/2;
     margin-bottom: -5px;
     margin-top: 350px;
-
 }
 
 #home-msg h1, #home-msg h4 {
     text-align: center;
-    color: black;
-    opacity: 80%;
+    color: var(--primary-color);
+  
 }
 
 .home-title {
@@ -122,8 +121,13 @@ main {
     padding: 50px;
     font-family: var(--heading-font)
 }
-p {
+h1, h2{
+    color: var(--primary-color);
+}
+p{
     font-family: var(--paragraph-font);
+}
+#top-text p,#shop p {
     text-align: justify;
     margin-bottom: 80px;
     margin-top: 20px;
@@ -177,15 +181,13 @@ main section img {
     padding-top: 120px;
     text-align: center;
 }
-#shop{
-    border-bottom: 1px solid #ccc!important;
+#shop h1{
+    border-bottom: 3px solid var(--accent1-color)!important;
 }
 div.room{
     height: 600px; 
 }
-.room p{
-    margin-bottom: 80px;
-}
+
 
 
 #living-img {
@@ -212,6 +214,9 @@ div.room{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+}    
+.shop p{
+        margin-bottom: 80px;
 }
 .shop:hover {
     color:black;
@@ -258,7 +263,7 @@ a {
 
 /* Adjust Element */
 @media screen and (max-width: 900px) {
-    #home, .home-grid {
+    .top1 .home-grid {
         display: block;
         height: auto;
     }
@@ -269,7 +274,7 @@ a {
         display: block;
         padding: 15px;
     }
-    #home {
+    #slider {
         margin-top: 0;
     }
     #home-msg {
@@ -283,21 +288,23 @@ a {
         color: #6f7364;
     }
     .top1, .top2,.top3,.top4 { 
-        margin: 50px auto;
+    
         width: 60%;
+        float: left;
     }
     .text{
         margin: 50px auto;
     }
+    .shop{
+        display:none;
+    }
+
+
 
     #background {
         display: none;
     }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
+    
     footer {
         margin-top: 25px;
     }
