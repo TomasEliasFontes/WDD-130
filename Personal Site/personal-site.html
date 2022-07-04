@@ -22,7 +22,7 @@
             </nav>
         </header>
 
-        <section id="slider">
+        <div id="slider">
             <div id="home-box">
                 <figure id="home-imgs">
                     <img src="images/home-page1.jpg" alt="linving">
@@ -31,11 +31,11 @@
                     <img src="images/home-page1.jpg" alt="living">
                 </figure>
             </div>
-            <div id="home-msg">
+            <section id="home-msg">
                 <h1 class="home-title" >Furniture you wish</h1>
                 <h4 class=" home-subtitle">All the furniture you are looking for and more</h4>
-            </div>
-        </section>
+            </section>
+        </div>
    
         <main class="home-grid">
             <section id="top-products">
@@ -43,46 +43,66 @@
                     <h1> Top Prefed Product</h1>
                     <p>The most requested and best furniture that customers want, with the best quality and possible prices. You can see the most requested products and the orders that our customers buy, to be able to take them to your home too. These products change every season, so you can always see new, unique, and special furniture every season to adapt your home.</p>
                 </div>
-                <div id="products">
-                    <figure id="top-imgs">
-                        <img src="images/top1.jpg" alt="furniture">
-                        <h3>Table of Light</h3>
-                        <p>$500</p>
+                <div class="products">
+                        <section class = "top1">
+                            <img  class = "top-img" src="images/top1.jpg" alt="chest">
+                            <h3>chest of drawers</h3>
+                            <p>$500</p>
+                        </section>
 
-                        <img src="images/top2.jpg" alt="armchair">
-                        <h3>Armchairs</h3>
-                        <p>$200</p>
+                        <section class = "top2">
+                            <img class = "top-img"  src="images/top2.jpg" alt="armchair">
+                            <h3>Armchairs</h3>
+                            <p>$200</p>
+                        </section>
 
-                        <img src="images/top3.jpg" alt="table">
-                        <h3>Table</h3>
-                        <p>$600</p>
+                        <section class = "top3">
+                            <img class = "top-img" src="images/top3.jpg" alt="table">
+                            <h3>Table</h3>
+                            <p>$600</p>
+                        </section>
 
-                        <img src="images/top4.jpg" alt="light lamp">
-                        <h3>Light Lamp</h3>
-                        <p>$150</p>
-
-                    </figure>
+                        <section class = "top4">
+                            <img class = "top-img"  src="images/top4.jpg" alt="light lamp">
+                            <h3>Light Lamp</h3>
+                            <p>$150</p>
+                        </section>
                 </div>
             </section>
             <section class="rooms">
-                <h1>Shop By room</h1>
+                <h1 id = "shop">Shop By room</h1>
                 <p>Designing your home is sometimes not so easy, that's why we can help you with the changes in your environment. Select the environment that you want to be decorated with the furniture we have, to give ideas in which places and how they would look when implemented in a place. Being easier to see and search for what one is looking for at home.</p>
-                <div id="living">
-                    <img src="images/page1-1.png" alt="living room">
-                    <h2>Living</h2>
-                    <p>Selected furniture for your living room, and make it comfortable, versatile, and beautiful for the family.</p>
-                </div>
-                <div id="bedroom">
-                    <img src="images/page1-2.png" alt="bedroom">
-                    <h2>Bedroom</h2>
-                    <p>For enjoy your bedroom much more, with the furniture to be able to rest much more calmly and happily with it.</p>
-
-                </div>
-                <div id="bathroom">
-                    <img src="images/page1-3.png" alt="bathroom">
-                    <h2>Bathroom</h2>
-                    <p>To keep your bathroom clean, and tidy. Making it nice to be in and easier to store all the accessories.</p>
-
+                <div id ="rooms">    
+                    <div class="room">
+                        <img id = "living-img"src="images/page1-1.png" alt="living room">
+                        <div class="text">
+                            <h2>Living</h2>
+                            <p>Selected furniture for your living room, and make it comfortable, versatile, and beautiful for the family.</p>
+                            <div class="button-box">
+                                <a class="shop" href="shop-site.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room">
+                        <img id = "bedroom-img"src="images/page1-3.png" alt="bedroom">
+                        <div class="text">
+                            <h2>Bedroom</h2>
+                            <p>For enjoy your bedroom much more, with the furniture to be able to rest much more calmly and happily with it.</p>
+                            <div class="button-box">
+                                <a class="shop" href="shop-site.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room">
+                        <img id = "bathroom-img"src="images/page1-2.png" alt="bathroom">
+                        <div class="text">
+                            <h2>Bathroom</h2>
+                            <p>To keep your bathroom clean, and tidy. Making it nice to be in and easier to store all the accessories.</p>
+                            <div class="button-box">
+                                <a class="shop" href="shop-site.html">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
