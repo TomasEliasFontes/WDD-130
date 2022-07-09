@@ -182,12 +182,38 @@ main section img {
 .top4{
     grid-column: 8/9;
 }
-
 #top{
         position: relative;
         width: 100%;
     }
-    
+   
+a.previous.round, a.next.round{
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+      
+a:hover {
+        background-color: var(--secondary-color);
+        color: black;
+      }
+
+.previous {
+        background-color: var(--accent1-color);
+        color: black;
+      }
+      
+.next {
+        background-color: var(--accent1-color);
+        color: black;
+      }
+      
+.round {
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 220px;
+      }   
+
 .middle {
     transition: .5s ease;
     opacity: 0;
