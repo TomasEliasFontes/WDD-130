@@ -38,9 +38,9 @@ header {
 }
 
 .logo {
-    width: 75px;
+    width: 85px;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
     justify-self: center;
     align-self:  center;
 }
@@ -161,13 +161,12 @@ main section img {
 .top-img {
     box-sizing: border-box;
     border: 6px solid var(--accent1-color);
-    transition: transform .5s;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
   
 }
-.top-img:hover {
-    opacity: .8;
-    transform: scale(1.1);
-}
+
 .top1{
     grid-column: 2/3;
 }
@@ -179,6 +178,39 @@ main section img {
 }
 .top4{
     grid-column: 8/9;
+}
+
+#top{
+        position: relative;
+        width: 100%;
+    }
+    
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 15%);
+    text-align: center;
+    }
+    
+#top:hover .top-img {
+    opacity: 0.3;
+}   
+    
+#top:hover .middle {
+    opacity: 1;
+}
+    
+.details {
+    background-color:rgba(255, 255, 255,0.8);
+    color: rgb(69, 67, 67);
+    font-size: 15px;
+    padding: 16px 32px;
+}
+#text{
+    size: 20px;
 }
 
 /* Rooms */
@@ -284,9 +316,9 @@ a {
         margin-top: 0;
     }
     #home-msg {
-        margin-top: 0;
+        position:fixed;
     }
-    #home-msg h4,#home-msg h1 {
+    #home-msg h4 {
         display: none;
     }
     .home-title {
