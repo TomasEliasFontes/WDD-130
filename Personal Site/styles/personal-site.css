@@ -182,7 +182,7 @@ main section img {
 .top4{
     grid-column: 8/9;
 }
-#top{
+.top{
         position: relative;
         width: 100%;
     }
@@ -224,11 +224,11 @@ a:hover {
     text-align: center;
     }
     
-#top:hover .top-img {
+.top:hover .top-img {
     opacity: 0.3;
 }   
     
-#top:hover .middle {
+.top:hover .middle {
     opacity: 1;
 }
     
