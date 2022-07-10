@@ -342,9 +342,7 @@ a {
     #slider {
         margin-top: 0;
     }
-    #home-msg {
-        position:auto;
-    }
+  
     #home-msg h4 {
         display: none;
     }
@@ -365,9 +363,6 @@ a {
 
     #living-img,#bedroom-img,#bathroom-img{
         float: none;
-        padding-right:none;
-        padding-left:none;
-
     }
     #living-img,#bedroom-img,#bathroom-img, .text {
         width: 80%;
