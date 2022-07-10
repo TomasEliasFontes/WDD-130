@@ -153,6 +153,7 @@ p{
     grid-template-columns: repeat(9, 1fr);
     font-family: var(--paragraph-font);
     text-align: center;
+    
 }
 .products p{
     text-align: center;
@@ -183,36 +184,36 @@ main section img {
     grid-column: 8/9;
 }
 .top{
-        position: relative;
-        width: 100%;
-    }
+    position: relative;
+    width: 100%;
+}
    
 a.previous.round, a.next.round{
-        text-decoration: none;
-        display: inline-block;
-        padding: 8px 16px;
-      }
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 16px;
+}
       
 a:hover {
-        background-color: var(--secondary-color);
-        color: black;
-      }
+    background-color: var(--secondary-color);
+    color: black;
+    }
 
 .previous {
-        background-color: var(--accent1-color);
-        color: black;
-      }
+    background-color: var(--accent1-color);
+    color: black;
+    }
       
 .next {
-        background-color: var(--accent1-color);
-        color: black;
-      }
+    background-color: var(--accent1-color);
+    color: black;
+}
       
 .round {
-        border-radius: 50%;
-        margin: auto;
-        margin-bottom: 220px;
-      }   
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 220px;
+}   
 
 .middle {
     transition: .5s ease;
@@ -304,8 +305,9 @@ footer a {
     text-decoration:none;
 }
 footer a:hover {
-    color:azure ;
+    color:rgb(0, 0, 0) ;
     text-decoration:underline;
+    background-color: none;
 }
 
 .footer h3 a:hover {
