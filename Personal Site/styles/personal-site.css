@@ -141,9 +141,7 @@ p{
     margin-top: 20px;
 }
 /* top products */
-#top-products {
-    font-family: var(--heading-font)
-}
+
 #top-text h1{
         border-bottom: 3px solid var(--accent1-color)!important;
     }
@@ -254,19 +252,23 @@ div.room{
     height: 600px; 
 }
 
-
-
 #living-img {
     padding-right: 20px;
     float: left;
+    width: 700px;
+    height: 500px;
 }
 #bedroom-img {
     padding-left: 20px;
     float: right;
+    width: 700px;
+    height: 500px;
 }
 #bathroom-img {
     padding-right: 20px;
     float: left;
+    width: 700px;
+    height: 500px;
 }
 
 .button-box{
@@ -344,7 +346,10 @@ a {
     #slider {
         margin-top: 0;
     }
-  
+    .logo{
+        height: 130px;
+        width: auto;
+    }
     #home-msg h4 {
         display: none;
     }
@@ -365,6 +370,8 @@ a {
 
     #living-img,#bedroom-img,#bathroom-img{
         float: none;
+        width: 50%;
+        height: auto;
     }
     #living-img,#bedroom-img,#bathroom-img, .text {
         width: 80%;
