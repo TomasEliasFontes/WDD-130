@@ -166,7 +166,7 @@ main section img {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
-  
+    margin-right: 80px;
 }
 
 .top1{
@@ -360,6 +360,9 @@ a {
     .top1, .top2,.top3,.top4 { 
         width: 60%;
         float: left;
+    }
+    .products{
+        overflow: auto;
     }
     .text{
         margin: 50px auto;
