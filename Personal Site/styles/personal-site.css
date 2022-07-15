@@ -166,7 +166,6 @@ main section img {
     opacity: 1;
     transition: .5s ease;
     backface-visibility: hidden;
-    margin-right: 80px;
 }
 
 .top1{
@@ -184,6 +183,7 @@ main section img {
 .top{
     position: relative;
     width: 100%;
+    margin-right: 80px;
 }
    
 a.previous.round, a.next.round{
@@ -192,7 +192,7 @@ a.previous.round, a.next.round{
     padding: 7px 16px;
 }
       
-a:hover {
+#button-box a:hover {
     background-color: var(--secondary-color);
     color: black;
     }
@@ -218,7 +218,7 @@ a:hover {
     opacity: 0;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 30px;
     transform: translate(0, 15%);
     text-align: center;
     }
@@ -360,6 +360,17 @@ a {
     .top1, .top2,.top3,.top4 { 
         width: 60%;
         float: left;
+    }
+    .top h3, .top p{
+        margin-left: 30px;   
+    }
+
+    .middle{
+        top:-50px;
+        padding: -30px;
+    }
+    .details p{
+        margin-left: 0;
     }
     .products{
         overflow: auto;
