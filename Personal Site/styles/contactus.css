@@ -237,11 +237,16 @@ a {
         width: auto;
     }
     form {
-        width: 100%;
+        width: auto;
         max-width: 500px;
         float: none;
+        
     }
     
+    input,
+    textarea {
+        width: auto; 
+    }
     
     img { 
         width: 100%;
@@ -269,6 +274,5 @@ a {
 @media screen and (max-width: 1600px) {
     footer {
         margin-top: 50px;
-
     }
 }
