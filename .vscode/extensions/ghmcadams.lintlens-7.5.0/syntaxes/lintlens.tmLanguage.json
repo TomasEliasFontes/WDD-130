@@ -1,0 +1,113 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "LintLens ESLint Configuration Options",
+	"scopeName": "source.lintlens",
+	"patterns": [
+		{
+			"include": "#value"
+		}
+	],
+	"repository": {
+		"types": {
+			"patterns": [{
+				"name": "storage.type.lintlens",
+				"match": "\\b(string|object|array|boolean|number|integer|any)\\b"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.lintlens",
+				"match": "\\b(if|then|else|any of|all of|one of|not)\\b"
+			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "keyword.operator.lintlens",
+				"match": "\\b(<|>|≤|≥|\\|)\\b"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"name": "variable.language.lintlens",
+				"match": "\\b(x)\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.language.lintlens",
+				"match": "\\b(true|false|null)\\b"
+			}]
+		},
+		"regexp": {
+			"patterns": [{
+				"name": "constant.regexp.lintlens",
+				"match": "(\/.+\/)"
+			}]
+		},
+		"special": {
+			"patterns": [{
+				"name": "special.lintlens",
+				"match": "\\b(required)\\b"
+			}]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.lintlens",
+					"match": "\"([^\"]+)\""
+				}
+			]
+		},
+		"numeric" : {
+			"patterns": [
+				{
+					"match": "(?x)-?(?:0|[1-9]\\d*)(?:(?:\\.\\d+)?(?:[eE][+-]?\\d+)?)?",
+					"name" : "constant.numeric.lintlens"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"match": "(\\/\\/ .*)",
+					"name": "comment.lintlens"
+				}
+			]
+		},
+		"object": {
+			"begin": "\\{",
+			"end": "\\}",
+			"patterns": [
+				{ "include": "#comments" },
+				{ "include": "#objectkey" },
+				{
+					"begin": ":",
+					"end": "(,)|(?=\\})",
+					"patterns": [
+						{ "include": "#value" }
+					]
+				}
+			]
+		},
+		"objectkey": {
+			"begin": "\"",
+			"end": "\"",
+			"name": "support.type.property-name.json.lintlens"
+		},
+		"value": {
+			"patterns": [
+				{ "include": "#types" },
+				{ "include": "#keywords" },
+				{ "include": "#operators" },
+				{ "include": "#variables" },
+				{ "include": "#constants" },
+				{ "include": "#regexp" },
+				{ "include": "#special" },
+				{ "include": "#object" },
+				{ "include": "#strings" },
+				{ "include": "#numeric" },
+				{ "include": "#comments" }
+			]
+		}
+	}
+}
